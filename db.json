@@ -1,5 +1,5 @@
 {
-  "articles": [
+  "books": [
     {
       "_id": "5cee19c95b7a03f718bdf0cb",
       "index": 0,
@@ -1649,5 +1649,10 @@
       "title": "Quis incididunt adipisicing veniam magna fugiat elit do exercitation non.",
       "created": "2019-04-28T08:55:04+00:00"
     }
+  ],
+  "users": [
+    { "name": "Alojzy", "email": "alojzy@ciurlok.pl" },
+    { "name": "Joanna", "email": "asia@buziaczek.pl" },
+    { "name": "Jaro", "email": "jaroslaw.k@na-powaznie.pl" }
   ]
 }
