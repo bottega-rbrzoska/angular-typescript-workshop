@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
 import { User } from 'src/app/models/User';
 import { TestService } from '../test.service';
 
@@ -13,7 +14,9 @@ export class MyTestComponent implements OnInit {
 
   user$: Observable<User[]>;
   constructor(private test: TestService) {
-    this.user$ = test.fetchUsers();
+    this.user$ = test.fetchUsers().pipe(
+      share()
+    );
   }
 
   ngOnInit(): void {
