@@ -13,12 +13,11 @@ export class AppComponent {
 
   constructor(private router: Router, private counterService: CounterService) {
     console.log('init app component');
-    this.counter = this.counter;
+    this.counterService.counter$.subscribe( c => this.counter = c);
     router.events.pipe(
       filter(ev => ev instanceof NavigationEnd )
     ).subscribe(() => {
       this.counterService.increment();
-      this.counter = this.counterService.counter;
     });
   }
 }
