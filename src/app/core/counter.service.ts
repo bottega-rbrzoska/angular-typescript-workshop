@@ -9,7 +9,9 @@ export class CounterService {
   get counter() {
     return this.counterValue;
   }
-  constructor() { }
+  constructor() {
+    console.log('init class')
+  }
 
   increment() {
     this.counterValue++;

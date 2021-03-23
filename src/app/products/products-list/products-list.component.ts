@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CounterService } from 'src/app/core/counter.service';
+import { TestService } from 'src/app/test/test.service';
 
 @Component({
   selector: 'tsa-products-list',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsListComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
   }

@@ -12,6 +12,7 @@ export class AppComponent {
   counter: any;
 
   constructor(private router: Router, private counterService: CounterService) {
+    console.log('init app component');
     this.counter = this.counter;
     router.events.pipe(
       filter(ev => ev instanceof NavigationEnd )
