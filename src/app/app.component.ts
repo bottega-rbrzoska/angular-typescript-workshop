@@ -18,6 +18,6 @@ export class AppComponent {
     ).subscribe(() => {
       this.counterService.increment();
       this.counter = this.counterService.counter;
-    })
+    });
   }
 }
